@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plan Your Trip</title>
+</head>
+ <link rel="stylesheet" href="style.css">
+ <script>
+    function submitForm()
+{
+    alert("Your Trip Form Submitted Successfully!");
+}
+
+ </script>
+
+<body>
+
+    <h1><img src="images/logo.png" alt="" id="logo" onmouseover="imageOver(this)"
+onmouseout="imageOut(this)"> Himachal Pradesh</h1>
+
+<nav>
+    <a href="index.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Home</a>
+
+    <a href="food.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Food</a>
+
+    <a href="tourist.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Tourist Places</a>
+
+    <a href="form.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Plan Your Trip</a>
+
+    <a href="about.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">About</a>
+</nav>
+
+<hr>
+
+<div class="form">
+
+<h2 style="color:darkgreen; text-align:center;">
+Plan Your Trip
+</h2>
+
+<p align="center">
+Explore the Beauty of Himachal Pradesh
+</p>
+
+<form onsubmit="submitForm(); return false;">
+
+<label>Full Name:</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email:</label>
+<input type="email" placeholder="Enter your email" >
+
+<label>Mobile Number:</label>
+<input type="tel" placeholder="Enter mobile number">
+
+<label>Select Destination:</label>
+<select required>
+    <option value="">Choose Destination</option>
+    <option>Shimla</option>
+    <option>Manali</option>
+    <option>Kasol</option>
+    <option>Kasauli</option>
+    <option>Kinnaur</option>
+    <option>Spiti Valley</option>
+</select>
+
+<label>Number of Visitors:</label>
+<input type="number" placeholder="Enter visitors">
+
+<label>Date of Visit:</label>
+<input type="date" >
+
+<label>Trip Type:</label>
+<select>
+    <option>Family Trip</option>
+    <option>Friends Trip</option>
+    <option>Adventure Trip</option>
+    <option>Nature Trip</option>
+</select>
+
+<label>Message:</label>
+<textarea rows="4" placeholder="Enter your message"></textarea>
+
+<button type="submit" id="bt" onclick="submitForm">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
